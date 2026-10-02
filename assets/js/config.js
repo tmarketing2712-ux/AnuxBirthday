@@ -81,7 +81,7 @@ const CONFIG = {
         id: 1,
         category: "shared",
         // Recommended file name to drop into assets/images/
-        src: "assets/images/photo1.jpg",
+        src: "assets/images/photo1.jpeg",
         fallbackSvg: "assets/images/photo1.svg",
         title: "A memory worth keeping",
         caption: "One of those days I'll always remember. Dressed up, fairy lights around, and genuine laughter that stays with you.",
@@ -101,7 +101,7 @@ const CONFIG = {
       {
         id: 3,
         category: "her",
-        src: "assets/images/photo3.jpg",
+        src: "assets/images/photo3.jpeg",
         fallbackSvg: "assets/images/photo3.svg",
         title: "Just being Anu",
         caption: "One of those little moments outdoors. Floral vibes, quiet grace, and natural sunshine.",
@@ -111,7 +111,7 @@ const CONFIG = {
       {
         id: 4,
         category: "her",
-        src: "assets/images/photo4.jpg",
+        src: "assets/images/photo4.jpeg",
         fallbackSvg: "assets/images/photo4.svg",
         title: "One of those little moments",
         caption: "You probably don't realize how memorable this is. Just you, effortlessly brightening up the frame.",
