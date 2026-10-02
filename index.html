@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Strict Privacy Directives: Prevents search engine indexing & public leaks -->
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+  <meta name="referrer" content="no-referrer">
+  
+  <title> AnuxBirthday ✨</title>
+
+  <!-- Google Fonts: Elegant Serif, Modern Sans, and Warm Handwritten Script -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Dancing+Script:wght@500;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="overflow-locked">
+
+  <!-- Canvas for Ambient Twinkling Stars & Subtle Stardust -->
+  <canvas id="celestial-canvas"></canvas>
+
+  <!-- ==========================================
+       🎬 OPENING CINEMATIC SCREEN
+       ========================================== -->
+  <div id="opening-screen">
+    <div class="opening-content">
+      <div id="opening-step-1" class="opening-text">Hey Anu...</div>
+      <div id="opening-step-2" class="opening-text accent-text">Someone has been preparing a little surprise for you.</div>
+      <div id="opening-step-3" class="opening-text">For the girl who has been part of my story since 3rd class...</div>
+      <button id="opening-btn" class="opening-btn" aria-label="Open your surprise">
+        Open Your Surprise ✨
+      </button>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       🎂 HERO SECTION
+       ========================================== -->
+  <header class="hero-section" id="hero-section" data-soundtrack="opening">
+    <div class="container container-narrow">
+      <div class="hero-scrapbook-frame fade-up">
+        <div class="washi-tape top-center"></div>
+        <div class="hero-stars-ornament">✦ ✦ ✦</div>
+        <h1 class="hero-main-title" id="hero-greeting">Happy Birthday, Ananya ❤️</h1>
+        <h2 class="hero-sub-title" id="hero-sub-greeting">Or should I say... Happy Birthday, Anu? 😊</h2>
+        
+        <div class="hero-divider"></div>
+        
+        <p class="hero-story-line" id="hero-tagline">
+          From 3rd class to today, you've become a beautiful part of so many memories.
+        </p>
+        <p class="hero-sub-text" id="hero-sub-text">
+          This little surprise is just for you.
+        </p>
+
+        <a href="#timeline-section" class="hero-scroll-indicator">
+          <span>Scroll down memory lane</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       🕰️ SECTION 1 — TIMELINE (“AND IT ALL STARTED IN 3RD CLASS...”)
+       ========================================== -->
+  <section class="timeline-section" id="timeline-section" data-soundtrack="timeline">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">Chapter 01 • The Beginning</span>
+        <h2 class="section-title" id="timeline-heading">And It All Started in 3rd Class...</h2>
+        <p class="section-subtitle" id="timeline-subtitle">A new school. New faces. New memories waiting to happen.</p>
+      </div>
+
+      <div class="timeline-quote-box fade-up" id="timeline-quote">
+        “I didn't know back then how many memories would come from that one chapter.”
+      </div>
+
+      <div class="timeline-track-container" id="timeline-list">
+        <!-- Rendered dynamically from config.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       📸 SECTION 2 — PHOTO MEMORIES
+       ========================================== -->
+  <section class="gallery-section" id="gallery-section" data-soundtrack="gallery">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">Scrapbook Moments 📸</span>
+        <h2 class="section-title">Some Memories Deserve to Stay Forever</h2>
+        <p class="section-subtitle">Little snapshots of time, laughter, and days that quietly meant a lot.</p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="gallery-filters fade-up">
+        <button class="gallery-filter-btn active" data-category="all">All Moments ✨</button>
+        <button class="gallery-filter-btn" data-category="her">Her Little Moments 🌸</button>
+        <button class="gallery-filter-btn" data-category="shared">Some Memories 📸</button>
+      </div>
+
+      <!-- Photo Grid -->
+      <div class="gallery-grid" id="gallery-grid">
+        <!-- Rendered dynamically from config.js -->
+      </div>
+
+      <!-- Discrete Helper Bar for Pari -->
+      <div class="photo-helper-bar fade-up">
+        <button id="photo-helper-toggle" class="photo-helper-toggle-btn">
+          🔒 Photo Setup &amp; Privacy Helper
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       ✨ SECTION 3 — “THINGS THAT MAKE YOU... YOU”
+       ========================================== -->
+  <section class="qualities-section" id="qualities-section" data-soundtrack="qualities">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">Appreciation ✦</span>
+        <h2 class="section-title" id="qualities-heading">Things That Make You... You</h2>
+        <p class="section-subtitle" id="qualities-subtitle">The understated things that make you so genuinely special to everyone around you.</p>
+      </div>
+
+      <div class="qualities-grid" id="qualities-grid">
+        <!-- Rendered dynamically from config.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       💌 SECTION 4 — PERSONAL LETTER
+       ========================================== -->
+  <section class="letter-section" id="letter-section" data-soundtrack="letter">
+    <div class="container container-narrow">
+      <div class="section-header fade-up">
+        <span class="section-tag">From the Heart 💌</span>
+        <h2 class="section-title" id="letter-heading">A Little Something I Wanted You to Know...</h2>
+      </div>
+
+      <div class="letter-envelope-wrapper fade-up">
+        <div class="wax-seal-container">
+          <button class="wax-seal" id="wax-seal" title="Click to break the wax seal">
+            <span class="wax-seal-initial">A</span>
+          </button>
+          <div class="seal-hint-text" id="seal-hint">Tap seal to open letter ✦</div>
+        </div>
+
+        <div class="personal-letter-card" id="personal-letter-card">
+          <div class="letter-salutation" id="letter-salutation">Anu,</div>
+          
+          <div class="letter-body" id="letter-body">
+            <!-- Paragraphs populated from config.js -->
+          </div>
+
+          <div class="letter-signoff">
+            <div class="letter-closing" id="letter-closing">Happy Birthday, Anu. ❤️</div>
+            <div class="letter-signature" id="letter-signature">— Pari</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       👀 SECTION 5 — HIDDEN SURPRISE
+       ========================================== -->
+  <section class="surprise-teaser-section" id="surprise-section" data-soundtrack="surprise">
+    <div class="container container-narrow">
+      <div class="surprise-teaser-card fade-up">
+        <div class="washi-tape top-center"></div>
+        <h2 class="surprise-teaser-title" id="surprise-teaser-title">Okay Anu... There's One More Thing 👀</h2>
+        <p class="surprise-teaser-sub" id="surprise-teaser-sub">“You didn't think that was everything, did you?”</p>
+        <button id="surprise-btn" class="surprise-btn">
+          Don't Click This 😌
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cinematic Fullscreen Reveal Modal -->
+  <div class="cinematic-modal" id="surprise-cinematic-modal">
+    <div class="cinematic-inner">
+      <div id="cinematic-lines-container">
+        <!-- Lines injected via main.js with staggered pauses -->
+      </div>
+      <button class="cinematic-close-btn" id="cinematic-close-btn">
+        Continue to the Stars ✨
+      </button>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       🌟 SECTION 6 — FINAL SCREEN
+       ========================================== -->
+  <section class="final-screen-section" id="final-screen-section" data-soundtrack="final">
+    <div class="container container-narrow">
+      <div class="final-screen-card fade-up">
+        <div class="washi-tape top-center"></div>
+        <h2 class="final-heading" id="final-heading">Happy Birthday, Ananya ❤️</h2>
+        
+        <p class="final-line" id="final-line-1">
+          “From the 3rd-class kid who met you at a new school...”
+        </p>
+        <p class="final-line" id="final-line-2">
+          “...to Pari, who's still grateful that day happened.”
+        </p>
+
+        <p class="final-wish" id="final-wish">
+          Keep smiling, Anu. You deserve it.
+        </p>
+        
+        <p class="final-signature" id="final-sign">
+          — Parikshit
+        </p>
+
+        <!-- Interactive Wish Candle -->
+        <div class="wish-candle-box">
+          <div class="candle-element">
+            <div class="candle-flame" id="candle-flame"></div>
+            <div class="candle-stick"></div>
+          </div>
+          <div>
+            <button class="make-wish-btn" id="make-wish-btn">
+              Make a Birthday Wish 🎂
+            </button>
+          </div>
+          <div class="wish-message-pop" id="wish-message-pop"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       🖼️ PHOTO LIGHTBOX MODAL
+       ========================================== -->
+  <div class="lightbox-modal" id="photo-lightbox">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close lightbox">✕</button>
+      <img src="" alt="Enlarged Memory" id="lightbox-img" class="lightbox-img">
+      <h3 class="lightbox-title" id="lightbox-title"></h3>
+      <p class="lightbox-caption" id="lightbox-caption"></p>
+      <span class="lightbox-date" id="lightbox-date"></span>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       🔒 PHOTO HELPER MODAL FOR PARI
+       ========================================== -->
+  <div class="photo-helper-modal" id="photo-helper-modal">
+    <div class="photo-helper-card">
+      <button class="lightbox-close" id="photo-helper-close">✕</button>
+      <h3 class="photo-helper-title">🔒 Photo Setup &amp; Privacy Helper</h3>
+      <p class="photo-helper-desc">
+        Pari, you can test your 4 photos directly in the browser here. Any photo you choose is automatically cleaned of camera/GPS metadata before rendering.
+      </p>
+
+      <div class="slot-upload-row">
+        <div class="slot-title">Photo 1 (Pari &amp; Anu together - Formal/Red backdrop)</div>
+        <div class="slot-desc">Indoor celebration with festive lights.</div>
+        <div class="slot-input-wrap">
+          <input type="file" id="upload-slot-1" accept="image/*" class="slot-file-input">
+          <span class="slot-status" id="slot-status-1"></span>
+        </div>
+      </div>
+
+      <div class="slot-upload-row">
+        <div class="slot-title">Photo 2 (Pari &amp; Anu - Closer crop)</div>
+        <div class="slot-desc">Closer candid photo from the same occasion.</div>
+        <div class="slot-input-wrap">
+          <input type="file" id="upload-slot-2" accept="image/*" class="slot-file-input">
+          <span class="slot-status" id="slot-status-2"></span>
+        </div>
+      </div>
+
+      <div class="slot-upload-row">
+        <div class="slot-title">Photo 3 (Anu outdoors - Floral top &amp; jeans)</div>
+        <div class="slot-desc">Her Little Moments: Garden/sunny day portrait.</div>
+        <div class="slot-input-wrap">
+          <input type="file" id="upload-slot-3" accept="image/*" class="slot-file-input">
+          <span class="slot-status" id="slot-status-3"></span>
+        </div>
+      </div>
+
+      <div class="slot-upload-row">
+        <div class="slot-title">Photo 4 (Anu outdoors - Same floral outfit)</div>
+        <div class="slot-desc">Another candid moment of Anu outdoors.</div>
+        <div class="slot-input-wrap">
+          <input type="file" id="upload-slot-4" accept="image/*" class="slot-file-input">
+          <span class="slot-status" id="slot-status-4"></span>
+        </div>
+      </div>
+
+      <div class="privacy-notice-box">
+        <strong>Privacy Assurance:</strong> No photos are uploaded to any server. When you drop actual photos into <code>assets/images/photo1.jpg</code> to <code>photo4.jpg</code>, they become part of the static site automatically!
+      </div>
+
+      <div class="helper-actions">
+        <button id="clear-stored-photos-btn" class="helper-btn-secondary">Reset to Default Illustrations</button>
+        <button onclick="document.getElementById('photo-helper-modal').classList.remove('active')" class="helper-btn-primary">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       🎵 FLOATING MUSIC PLAYER
+       ========================================== -->
+  <div class="floating-music-player collapsed" id="music-player">
+    <div class="mp-header" id="mp-header">
+      <div class="mp-brand">
+        <div class="mp-disc-icon">
+          <div class="mp-disc-center"></div>
+        </div>
+        <span class="mp-title-badge">Our Little Soundtrack 🎵</span>
+      </div>
+      <button class="mp-toggle-btn" id="mp-toggle-btn" title="Toggle player">↕</button>
+    </div>
+
+    <div class="mp-expanded-content">
+      <div class="mp-current-track-info">
+        <div>
+          <div class="mp-track-title" id="mp-track-title">Woh Din</div>
+          <div class="mp-track-desc" id="mp-track-desc">School &amp; childhood memories</div>
+        </div>
+        <span class="mp-autosync-badge" id="mp-autosync-badge" title="Click to toggle auto/manual">Auto Sync: ON</span>
+      </div>
+
+      <div class="mp-progress-bar" id="mp-progress-bar">
+        <div class="mp-progress-fill" id="mp-progress-fill"></div>
+      </div>
+
+      <div class="mp-controls">
+        <button class="mp-play-btn" id="mp-play-btn" aria-label="Play/Pause">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+        </button>
+
+        <div class="mp-volume-group">
+          <button class="mp-mute-btn" id="mp-mute-btn" title="Mute/Unmute">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+          </button>
+          <input type="range" class="mp-volume-slider" id="mp-volume-slider" min="0" max="1" step="0.05" value="0.65" title="Volume">
+        </div>
+      </div>
+
+      <div class="mp-track-list" id="mp-track-list">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/particles.js"></script>
+  <script src="assets/js/audio-player.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
