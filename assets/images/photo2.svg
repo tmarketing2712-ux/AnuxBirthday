@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg2" x1="10%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#4a151b"/>
+      <stop offset="50%" stop-color="#701c27"/>
+      <stop offset="100%" stop-color="#2a080d"/>
+    </linearGradient>
+    <radialGradient id="bokehGlow" cx="60%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#ffe5a3" stop-opacity="0.4"/>
+      <stop offset="50%" stop-color="#e5a93c" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="1000" fill="url(#bg2)"/>
+  <rect width="800" height="1000" fill="url(#bokehGlow)"/>
+
+  <!-- Golden Fairy Light Orbs -->
+  <circle cx="200" cy="150" r="60" fill="#ffd54f" opacity="0.35" filter="url(#softGlow)"/>
+  <circle cx="650" cy="180" r="75" fill="#ffb74d" opacity="0.3" filter="url(#softGlow)"/>
+  <circle cx="120" cy="380" r="45" fill="#ffe082" opacity="0.25" filter="url(#softGlow)"/>
+  <circle cx="710" cy="450" r="50" fill="#ffd54f" opacity="0.3" filter="url(#softGlow)"/>
+  <circle cx="420" cy="100" r="40" fill="#fff9c4" opacity="0.4" filter="url(#softGlow)"/>
+
+  <!-- Fairy Light strings -->
+  <path d="M 0,220 Q 200,320 400,260 T 800,240" fill="none" stroke="#d4af37" stroke-width="1.2" opacity="0.5"/>
+  <circle cx="150" cy="275" r="5" fill="#ffffff" filter="url(#softGlow)"/>
+  <circle cx="340" cy="265" r="5" fill="#ffffff" filter="url(#softGlow)"/>
+  <circle cx="560" cy="245" r="6" fill="#ffffff" filter="url(#softGlow)"/>
+  <circle cx="720" cy="243" r="5" fill="#ffffff" filter="url(#softGlow)"/>
+
+  <!-- Closer candid silhouette of Pari & Anu smiling -->
+  <g transform="translate(400, 480)">
+    <!-- Decorative mandala ring behind them -->
+    <circle cx="0" cy="0" r="220" fill="#54131d" opacity="0.5"/>
+    <circle cx="0" cy="0" r="220" fill="none" stroke="#d4af37" stroke-width="1" stroke-dasharray="6,8" opacity="0.5"/>
+    
+    <!-- Pari closer profile / silhouette -->
+    <path d="M -110,-100 C -110,-140 -60,-140 -50,-95 C -45,-70 -55,-40 -75,-30 C -60,10 -50,150 -60,260 L -180,260 C -190,150 -160,20 -150,-30 C -165,-50 -160,-80 -110,-100 Z" fill="#20222a" opacity="0.95"/>
+    
+    <!-- Anu closer profile / silhouette with traditional jhumka / earring glint -->
+    <path d="M 60,-105 C 50,-145 110,-145 115,-95 C 120,-70 105,-40 90,-30 C 110,10 130,140 145,260 L 0,260 C 10,140 40,20 45,-30 C 35,-50 45,-80 60,-105 Z" fill="#8c2332" opacity="0.95"/>
+    
+    <!-- Golden earring twinkle on Anu -->
+    <polygon points="52,-55 55,-62 58,-55 65,-52 58,-49 55,-42 52,-49 45,-52" fill="#ffd54f"/>
+    <circle cx="55" cy="-52" r="8" fill="#ffd54f" opacity="0.4" filter="url(#softGlow)"/>
+  </g>
+
+  <!-- Frame border -->
+  <rect x="30" y="30" width="740" height="940" fill="none" stroke="#d4af37" stroke-width="1" opacity="0.35"/>
+  <rect x="42" y="42" width="716" height="916" fill="none" stroke="#ffffff" stroke-width="0.8" opacity="0.2"/>
+
+  <!-- Aesthetic Caption Label -->
+  <rect x="180" y="840" width="440" height="70" rx="35" fill="#200609" fill-opacity="0.88" stroke="#d4af37" stroke-width="1"/>
+  <text x="400" y="870" font-family="'Playfair Display', serif" font-size="20" fill="#fdfbf7" text-anchor="middle" font-weight="600" letter-spacing="1.5">
+    ONE OF THOSE DAYS
+  </text>
+  <text x="400" y="894" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" fill="#e6ca85" text-anchor="middle" letter-spacing="2">
+    ✨ A REALLY GOOD DAY • CHERISHED
+  </text>
+</svg>

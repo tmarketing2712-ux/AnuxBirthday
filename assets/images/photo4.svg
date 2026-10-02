@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <defs>
+    <linearGradient id="warmOutdoor2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff8f0"/>
+      <stop offset="50%" stop-color="#f5e6d3"/>
+      <stop offset="100%" stop-color="#dbe3d6"/>
+    </linearGradient>
+    <radialGradient id="sunGlow2" cx="30%" cy="25%" r="55%">
+      <stop offset="0%" stop-color="#ffeed1" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#ffd599" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softBlur2">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="1000" fill="url(#warmOutdoor2)"/>
+  <rect width="800" height="1000" fill="url(#sunGlow2)"/>
+
+  <!-- Golden warm light leak in upper left -->
+  <circle cx="200" cy="180" r="160" fill="#ffe082" opacity="0.35" filter="url(#softBlur2)"/>
+  <circle cx="200" cy="180" r="70" fill="#ffffff" opacity="0.5" filter="url(#softBlur2)"/>
+
+  <!-- Subtle floral garden trees & soft hills -->
+  <path d="M 0,650 Q 220,560 440,630 T 800,590 L 800,1000 L 0,1000 Z" fill="#758c6e" opacity="0.3"/>
+  <path d="M 0,720 Q 300,640 550,710 T 800,670 L 800,1000 L 0,1000 Z" fill="#586e52" opacity="0.35"/>
+
+  <!-- Floating golden sparkles / floral pollen -->
+  <circle cx="280" cy="300" r="4" fill="#ffd54f" opacity="0.8"/>
+  <circle cx="580" cy="220" r="5" fill="#ffd54f" opacity="0.7"/>
+  <circle cx="680" cy="380" r="4" fill="#ffd54f" opacity="0.6"/>
+  <circle cx="160" cy="460" r="3" fill="#ffd54f" opacity="0.7"/>
+  <polygon points="620,160 623,152 626,160 634,163 626,166 623,174 620,166 612,163" fill="#ffd54f" opacity="0.8"/>
+
+  <!-- Central Silhouette: Anu outdoors smiling candidly in floral top and jeans -->
+  <g transform="translate(400, 480)">
+    <!-- Gentle circular aura frame -->
+    <circle cx="0" cy="0" r="225" fill="#ffffff" opacity="0.65"/>
+    <circle cx="0" cy="0" r="225" fill="none" stroke="#d4af37" stroke-width="1.2" stroke-dasharray="3,5" opacity="0.5"/>
+
+    <!-- Hair (candid tilt, gentle breeze) -->
+    <path d="M -20,-135 C -20,-185 40,-185 40,-135 C 45,-95 25,-75 5,-75 C -15,-75 -25,-95 -20,-135 Z" fill="#322017"/>
+    <path d="M -15,-120 C -45,-90 -50,-30 -38,30 C -32,20 -25,-30 -15,-90 Z" fill="#261811"/>
+    <path d="M 25,-120 C 45,-80 50,-20 40,40 C 35,20 28,-30 20,-90 Z" fill="#261811"/>
+
+    <!-- Floral Top -->
+    <path d="M -45,-65 C -10,-75 20,-75 55,-65 C 68,-15 62,65 58,95 L -50,95 C -55,65 -60,-15 -45,-65 Z" fill="#fff5f5"/>
+    <!-- Beautiful floral pattern -->
+    <circle cx="0" cy="-35" r="9" fill="#f06292" opacity="0.8"/>
+    <circle cx="-25" cy="0" r="8" fill="#ec407a" opacity="0.75"/>
+    <circle cx="28" cy="15" r="8" fill="#f48fb1" opacity="0.8"/>
+    <circle cx="-15" cy="45" r="8" fill="#f06292" opacity="0.75"/>
+    <circle cx="22" cy="55" r="7" fill="#ec407a" opacity="0.7"/>
+    <!-- Soft green leaves -->
+    <ellipse cx="12" cy="-35" rx="5" ry="2.5" fill="#81c784" transform="rotate(35 12 -35)"/>
+    <ellipse cx="-12" cy="2" rx="4.5" ry="2" fill="#81c784" transform="rotate(-30 -12 2)"/>
+    <ellipse cx="38" cy="18" rx="4" ry="2" fill="#81c784" transform="rotate(25 38 18)"/>
+
+    <!-- Denim Jeans -->
+    <path d="M -50,95 C -15,92 25,92 58,95 L 48,275 L 10,275 L 0,145 L -10,275 L -42,275 Z" fill="#415a77"/>
+    <!-- Jeans detail stitches -->
+    <line x1="0" y1="95" x2="0" y2="145" stroke="#d4a373" stroke-width="1.5" stroke-dasharray="2,2"/>
+    <path d="M -30,120 C -15,135 -5,135 5,120" fill="none" stroke="#d4a373" stroke-width="1.2"/>
+    <path d="M 40,120 C 25,135 15,135 5,120" fill="none" stroke="#d4a373" stroke-width="1.2"/>
+  </g>
+
+  <!-- Frame border -->
+  <rect x="25" y="25" width="750" height="950" fill="none" stroke="#d4af37" stroke-width="1" opacity="0.35"/>
+  <rect x="35" y="35" width="730" height="930" fill="none" stroke="#c48b71" stroke-width="0.75" opacity="0.2"/>
+
+  <!-- Caption Label -->
+  <rect x="160" y="850" width="480" height="70" rx="35" fill="#ffffff" fill-opacity="0.9" stroke="#d4af37" stroke-width="1"/>
+  <text x="400" y="880" font-family="'Playfair Display', serif" font-size="20" fill="#2d2424" text-anchor="middle" font-weight="600" letter-spacing="1.5">
+    ONE OF THOSE LITTLE MOMENTS
+  </text>
+  <text x="400" y="904" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" fill="#8c6d58" text-anchor="middle" letter-spacing="2">
+    🌸 CANDID &amp; EFFORTLESS • MEMORIES
+  </text>
+</svg>
