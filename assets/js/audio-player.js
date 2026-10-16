@@ -27,6 +27,7 @@ class SurpriseAudioEngine {
 
     this.initElements();
     this.bindEvents();
+    this.selectTrack(0,false;
   }
 
   initElements() {
