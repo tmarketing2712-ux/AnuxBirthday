@@ -218,7 +218,7 @@ function initGallery(cfg) {
 
     filtered.forEach((photo, idx) => {
       const item = document.createElement("div");
-      item.className = `polaroid-card fade-up ${photo.category}`;
+      item.className = `polaroid-card  ${photo.category}`;
       item.setAttribute("data-id", photo.id);
 
       // Subtle random tilt for authentic scrapbook feel (-3 to +3 deg)
